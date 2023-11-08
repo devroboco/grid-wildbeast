@@ -8,6 +8,10 @@ blockquote {
   margin: 0px;
 }
 
+body {
+  font-family: "Volkorn", Georgia, serif;
+}
+
 a {
   text-decoration: none;
 }
