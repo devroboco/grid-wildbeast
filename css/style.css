@@ -46,6 +46,11 @@ img {
   max-width: 200px;
 }
 
+.header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .sidenav {
   grid-area: sidenav;
 }
