@@ -97,6 +97,9 @@ img {
 
 .anuncios {
   grid-area: anuncios;
+  background: #fafbfc;
+  display: grid;
+  align-content: start;
 }
 
 .footer {
