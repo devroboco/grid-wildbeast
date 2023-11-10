@@ -65,6 +65,10 @@ img {
   background: rgba(0, 0, 0, 0.5);
 }
 
+.header li + li {
+  margin-left: 30px;
+}
+
 .sidenav {
   grid-area: sidenav;
 }
