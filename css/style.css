@@ -127,6 +127,21 @@ p {
   margin-top: 30px;
 }
 
+.titulo {
+  color: #b07dfb;
+}
+
+.titulo h1 {
+  font-size: 3.75em;
+  line-height: 1;
+  font-weight: 700;
+}
+
+.titulo span {
+  font-size: 0.875em;
+  font-style: italic;
+}
+
 .anuncios {
   grid-area: anuncios;
   background: #fafbfc;
