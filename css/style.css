@@ -103,6 +103,10 @@ img {
   gap: 30px;
 }
 
+.col-wide {
+  grid-column: 1 / -1;
+}
+
 .anuncios {
   grid-area: anuncios;
   background: #fafbfc;
