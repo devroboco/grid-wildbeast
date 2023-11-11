@@ -107,6 +107,15 @@ img {
   grid-column: 1 / -1;
 }
 
+.imagem-1 {
+  grid-row: 3 / 5;
+  align-self: end;
+}
+
+.item-2 {
+  align-self: end;
+}
+
 .anuncios {
   grid-area: anuncios;
   background: #fafbfc;
