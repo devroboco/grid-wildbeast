@@ -207,7 +207,10 @@ p {
   font-family: Courier, monospace;
   font-size: 1.125em;
   padding: 15px;
-  border-bottom: 2px solid #b07dfb;
+}
+
+.atributos li + li {
+  border-top: 2px solid #b07dfb;
 }
 
 .anuncios {
