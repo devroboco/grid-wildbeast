@@ -179,6 +179,12 @@ p {
   top: 2px;
 }
 
+.destaque {
+  font-size: 0.875em;
+  color: #b07dfb;
+  max-width: 16em;
+}
+
 .anuncios {
   grid-area: anuncios;
   background: #fafbfc;
