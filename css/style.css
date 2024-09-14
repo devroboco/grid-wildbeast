@@ -9,22 +9,24 @@ blockquote {
 }
 
 body {
-  font-family: "Volkorn", Georgia, serif;
-}
-
-a {
-  text-decoration: none;
+  font-family: "Vollkorn", Georgia, serif;
 }
 
 li {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 img {
   display: block;
-  border-radius: 5px;
   max-width: 100%;
+  border-radius: 5px;
 }
+
+/* GRID GERAL */
 
 .estrutura {
   display: grid;
@@ -34,6 +36,30 @@ img {
     "sidenav content anuncios"
     "footer footer footer";
 }
+
+@media (max-width: 1200px) {
+  .estrutura {
+    grid-template-areas:
+      "header header header"
+      "sidenav content content"
+      "sidenav anuncios anuncios"
+      "footer footer footer";
+  }
+}
+
+@media (max-width: 760px) {
+  .estrutura {
+    grid-template-columns: 100%;
+    grid-template-areas:
+      "header"
+      "sidenav"
+      "content"
+      "anuncios"
+      "footer";
+  }
+}
+
+/*HEADER*/
 
 .header {
   grid-area: header;
@@ -71,6 +97,8 @@ img {
   margin-left: 30px;
 }
 
+/*SIDENAV*/
+
 .sidenav {
   grid-area: sidenav;
   background: #fafbfc;
@@ -93,6 +121,8 @@ img {
   background: #b07dfb;
 }
 
+/*CONTENT*/
+
 .content {
   grid-area: content;
   max-width: 900px;
@@ -108,13 +138,15 @@ img {
 }
 
 .imagem-1 {
-  grid-row: 3 / 5;
+  grid-row: span 2;
   align-self: end;
 }
 
 .item-2 {
   align-self: end;
 }
+
+/*ESTILOS CONTENT*/
 
 p {
   font-size: 1.2em;
@@ -126,6 +158,8 @@ p {
 .informacoes p + p {
   margin-top: 30px;
 }
+
+/*TITULO*/
 
 .titulo {
   color: #b07dfb;
@@ -141,6 +175,8 @@ p {
   font-size: 0.875em;
   font-style: italic;
 }
+
+/*CARACTERISTICAS*/
 
 .caracteristicas {
   display: flex;
@@ -214,6 +250,8 @@ p {
   border-top: 2px solid #b07dfb;
 }
 
+/*ANUNCIOS*/
+
 .anuncios {
   grid-area: anuncios;
   background: #fafbfc;
@@ -222,6 +260,8 @@ p {
   padding: 30px;
   gap: 30px;
 }
+
+/*FOOTER*/
 
 .footer {
   grid-area: footer;
